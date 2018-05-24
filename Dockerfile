@@ -9,7 +9,7 @@ WORKDIR /work
 
 COPY run.sh /run.sh
 
-RUN adduser -u 1000 -D -h /work -s /bin/sh converter && \
+RUN adduser -u 1000 -D -h /work -s /bin/bash converter && \
     chown -R converter /work && \
     chmod +x /run.sh
     
